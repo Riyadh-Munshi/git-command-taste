@@ -1,14 +1,10 @@
-function Input(props) {
+function Input({ id, text, placeholder, type }) {
   return (
     <div>
-      <label htmlFor={props.id}>
-        {props.text}
+      <label htmlFor={id}>
+        {text}
 
-        <input
-          type={props.type}
-          id={props.id}
-          placeholder={props.placeholder}
-        />
+        <input type={type} id={id} placeholder={placeholder} />
       </label>
     </div>
   );
